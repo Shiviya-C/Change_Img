@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imageSlider</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="text">What a wonderful world!</h1>
+    <div class="wrapper">
+        <div class="slide">
+            <img src="natural1.jpg" alt="" id="img1">
+        </div>
+        <div class="slide">
+            <img src="natural2.jpg" alt="" id="img2">
+        </div>
+        <div class="slide">
+            <img src="natural3.jpg" alt="" id="img3">
+        </div>
+        <div class="slide">
+            <img src="natural4.jpg" alt="" id="img4">
+        </div>
+        <div class="slide">
+            <img src="natural6.jpg" alt="" id="img5">
+        </div>
+    </div>
+    <script>
+        let text = document.getElementById("text");
+        document.getElementById('img1').addEventListener('mouseenter',function(){
+            document.body.style.backgroundImage = "url(natural1.jpg)" ;
+            text.innerText = "Nature is the art of god";
+        });
+        document.getElementById('img2').addEventListener('mouseenter',function(){
+            document.body.style.backgroundImage = "url(natural2.jpg)" ;
+            text.innerText = "Nature is the purest portal to inner-peace";
+        });
+        document.getElementById('img3').addEventListener('mouseenter',function(){
+            document.body.style.backgroundImage = "url(natural3.jpg)" ;
+            text.innerText = "Nature is not a place to visit. it is home"; 
+        });
+        document.getElementById('img4').addEventListener('mouseenter',function(){
+            document.body.style.backgroundImage = "url(natural4.jpg)" ;
+            text.innerText = "all goods things are wild and free";
+        });
+        document.getElementById('img5').addEventListener('mouseenter',function(){
+            document.body.style.backgroundImage = "url(natural6.jpg)" ;
+            text.innerText = "Where flowers bloom so does hope";
+        });
+        
+    </script>
+</body>
+</html>
